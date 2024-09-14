@@ -1,7 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"log"
+
+	"github.com/suhaibkhatr/go-practice/cmd/api"
+)
 
 func main() {
-	fmt.Println("Hello World")
+	server := api.NewAPIServer(":8080", nil)
+
+	if err := server.Run(); err != nil {
+		log.Fatalln(err)
+	}
 }
