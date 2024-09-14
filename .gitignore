@@ -1,6 +1,6 @@
 .envrc
 .env
-bin
 tmp
 ecom
 go.sum
+.go-practice
