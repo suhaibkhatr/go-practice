@@ -26,7 +26,7 @@ func initConfig() Config {
 		DBUser:     getEnv("DBUser", "root"),
 		DBPassword: getEnv("DBPassword", "123456"),
 		DBAddress:  fmt.Sprintf("%s:%s", getEnv("DB_HOST", "localhost"), getEnv("DB_PORT", "3306")),
-		DBName:     getEnv("DB_NAME", "go-practice"),
+		DBName:     getEnv("DB_NAME", "gopractice"),
 	}
 }
 

@@ -32,6 +32,7 @@ func main() {
 		log.Fatalln(err)
 	}
 }
+
 func initStorage(db *sql.DB) {
 	err := db.Ping()
 	if err != nil {
